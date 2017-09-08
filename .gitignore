@@ -22,5 +22,5 @@ yarn-error.log*
 
 #others
 **/__generated__/
-#/src/token.js
+/src/token.js
 schema.graphql
