@@ -22,9 +22,9 @@ class UsersGrid extends Component {
       const { viewer } = this.props;
       return (
         <ol style={styles.grid} className="books-grid">
-            {viewer.user.followers.edges.map(user => (
-            <li style={styles.gridListItem} key={user.id}>
-                <User user={user}/>
+            {viewer.user.followers.edges.map(({node}) => (
+            <li style={styles.gridListItem} key={node.id}>
+                <User user={node}/>
             </li>
             ))}
         </ol>

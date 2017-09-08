@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {createFragmentContainer, graphql} from 'react-relay'
 
 const styles = {
@@ -16,12 +16,25 @@ const styles = {
     }
 }
 
-const User = ({ user }) => (
-    <div style={styles.user}>
-        <img src={user.avatar_url} style={styles.userImage} alt="" />
-        <div style={styles.userName}>{user.login}</div>
-    </div>
-);
+// const User = ({ user }) => (
+//     <div style={styles.user}>
+//         <img src={user.avatarUrl} style={styles.userImage} alt="" />
+//         <div style={styles.userName}>{user.name}</div>
+//     </div>
+// );
+
+class User extends Component {
+    render() {
+      const { user } = this.props;
+
+      return (
+        <div style={styles.user}>
+           <img src={user.avatarUrl} style={styles.userImage} alt="" />
+           <div style={styles.userName}>{user.name}</div>
+        </div>
+      )
+    }
+  }
 
 //export default User
 export default createFragmentContainer(User, graphql`
