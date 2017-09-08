@@ -52,7 +52,6 @@
     "get-schema": "node scripts/getSchema.js",
     "get-token": "node scripts/getToken.js",
     "setup": "yarn install && yarn run get-token && yarn run get-schema && yarn run relay"
-
   },
   "jest": {
     "collectCoverageFrom": [

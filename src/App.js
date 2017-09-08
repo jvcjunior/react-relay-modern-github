@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
-import './App.css';
-
-import UsersGrid from './UsersGrid';
+import UsersGrid from './components/UsersGrid';
 
 import {
   QueryRenderer,
@@ -19,10 +16,6 @@ const AppQuery = graphql`
 
 class App extends Component {
   render() {
-
-    // return (
-    //   <UsersGrid />
-    // )
     return (
       <QueryRenderer
         environment={environment}

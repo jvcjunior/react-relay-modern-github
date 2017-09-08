@@ -21,6 +21,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #others
-/src/__generated__/
+**/__generated__/
 #/src/token.js
 schema.graphql
