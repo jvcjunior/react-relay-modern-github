@@ -1,11 +1,5 @@
-const {
-  Environment,
-  Network,
-  RecordSource,
-  Store,
-} = require('relay-runtime')
-
-const token = '';
+import {Environment, Network, RecordSource, Store} from 'relay-runtime'
+import token from './token'
 
 function fetchQuery(
   operation,
