@@ -1,6 +1,6 @@
-import React from 'react'
-import User from './User'
-import {createFragmentContainer, graphql} from 'react-relay'
+import React from 'react';
+import User from '../user';
+import {createFragmentContainer, graphql} from 'react-relay';
 
 const styles = {
     grid: {

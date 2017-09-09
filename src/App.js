@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UsersGrid from './components/UsersGrid';
+import UsersGrid from './components/users-grid';
 
 import {
   QueryRenderer,

@@ -44,14 +44,19 @@
   },
   "devDependencies": {
     "babel-plugin-relay": "^1.3.0",
-    "relay-compiler": "^1.3.0"
+    "relay-compiler": "^1.3.0",
+    "@storybook/react": "^3.2.8",
+    "@storybook/addon-actions": "^3.2.6",
+    "@storybook/addon-links": "^3.2.6"
   },
   "scripts": {
     "start": "yarn setup && node scripts/start.js",
     "relay": "relay-compiler --src ./src --schema schema.graphql",
     "get-schema": "node scripts/getSchema.js",
     "get-token": "node scripts/getToken.js",
-    "setup": "yarn install && yarn run get-token && yarn run get-schema && yarn run relay"
+    "setup": "yarn install && yarn run get-token && yarn run get-schema && yarn run relay",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "jest": {
     "collectCoverageFrom": [

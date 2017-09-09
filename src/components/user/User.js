@@ -1,5 +1,4 @@
 import React from 'react'
-import {createFragmentContainer, graphql} from 'react-relay'
 
 const styles = {
     user:{
@@ -23,9 +22,4 @@ const User = ({ user }) => (
     </div>
 );
 
-export default createFragmentContainer(User, graphql`
-    fragment User_user on User {
-        name,
-        avatarUrl
-    }
-`)
+export default User;
