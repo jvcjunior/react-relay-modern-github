@@ -1,6 +1,5 @@
 import React from 'react';
 import User from '../user';
-import {createFragmentContainer, graphql} from 'react-relay';
 
 const styles = {
     grid: {
@@ -27,16 +26,4 @@ const UsersGrid = ({viewer}) => (
     </ol>
 );
 
-export default createFragmentContainer(UsersGrid, graphql`
-    fragment UsersGrid_viewer on Query{
-        user(login: "jvcjunior") {
-            followers(first: 10) {
-                edges{
-                    node{
-                        ...User_user
-                    }
-                }
-            }
-        }
-    }
-`)
+export default UsersGrid

@@ -1,3 +1,3 @@
-import UsersGrid from './UsersGrid'
+import UsersGrid from './UsersGrid.relay'
 
 export default UsersGrid
