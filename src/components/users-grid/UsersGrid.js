@@ -1,5 +1,5 @@
 import React from 'react';
-import User from '../user';
+import User from '../user/User';
 
 const styles = {
     grid: {
